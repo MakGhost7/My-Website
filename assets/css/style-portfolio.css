@@ -1,0 +1,271 @@
+ /* Reset some default styles to ensure consistency across browsers */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Set a basic font style */
+ body {
+     font: italic 1.2rem "Montserrat", serif;
+ }
+
+ /* Style the header */
+ header {
+     background-color: #333;
+     /* Background color for the header */
+     color: #fff;
+     /* Text color for the header */
+ }
+
+ #navbar-div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+ }
+
+ #logo-name {
+     text-decoration: none;
+     color: #fff;
+     font-size: 24px;
+ }
+
+ #navbar-left {
+     display: flex;
+     align-items: center;
+ }
+
+ #navbar-right a {
+     text-decoration: none;
+     color: #fff;
+     margin: 0 10px;
+ }
+
+ /* Stile generale per il contenitore principale */
+ div {
+     text-align: center;
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+ /* Stile per l'intestazione */
+ #h2-portfolio {
+     font-size: 24px;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+ /* Stile per il sottotitolo */
+ h4 {
+     font-size: 18px;
+     color: #555;
+     margin-top: 20px;
+ }
+
+
+
+ /* Stile per le linee di testo nel paragrafo */
+ #cv-bio br {
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ /* Stile del contenitore principale */
+ #cv {
+     max-width: 800px;
+     margin: 0 auto;
+     background-color: #fff;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Stile dell'intestazione (Nome) */
+ #cv h1 {
+     font-size: 24px;
+     margin: 0;
+     color: #333;
+ }
+
+ /* Stile per i dettagli di contatto */
+ #cv p {
+     font-size: 16px;
+     margin: 5px 0;
+ }
+
+ /* Stile per il titolo delle sezioni (Esperienza Lavorativa, Formazione, Competenze Digitali) */
+ #cv h2 {
+     font-size: 20px;
+     margin: 20px 0 10px;
+     color: #333;
+ }
+
+ /* Stile per le voci di elenco (lavoro, formazione, competenze) */
+ #cv p strong {
+     font-weight: bold;
+ }
+
+ /* Stile per il periodo di tempo (date) */
+ #cv p em {
+     font-style: italic;
+     color: #888;
+ }
+
+ /* Aggiungi uno spazio tra i paragrafi */
+ #cv p+p {
+     margin-top: 10px;
+ }
+
+ /* Stile per i link (email e telefono) */
+ #cv p a {
+     text-decoration: none;
+     color: #0077b5;
+ }
+
+ /* Cambia colore su hover per i link */
+ #cv p a:hover {
+     color: #005786;
+ }
+
+ /* Stile per elenco di competenze */
+ #cv ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ #cv ul li {
+     margin: 5px 0;
+ }
+
+ /* Stile per le citazioni */
+ blockquote {
+     font-style: italic;
+     border-left: 2px solid #333;
+     margin: 10px 0;
+     padding-left: 10px;
+ }
+
+ /* Stile di base per il footer */
+ footer {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+     padding-bottom: 0%;
+
+ }
+
+
+
+ /* Stile per ciascuna icona sociale */
+ .social-icons a {
+     display: inline-block;
+     margin: 0 10px;
+     text-decoration: none;
+     color: #fff;
+     transition: color 0.3s;
+ }
+
+ .social-icons a:hover {
+     color: #007bff;
+     /* Cambia il colore al passaggio del mouse */
+ }
+
+ /* Stile per il testo del copyright */
+ #MK {
+     font-size: 14px;
+ }
+
+ /* Stile per le immagini delle icone sociali */
+ .social-icons img {
+     width: 40px;
+     height: 40px;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+
+ /* Stili responsive */
+ @media (max-width: 768px) {
+     .social-icons {
+         margin-bottom: 10px;
+     }
+
+     .social-icons a {
+         margin: 0 5px;
+     }
+
+     #MK {
+         font-size: 12px;
+     }
+
+     .social-icons img {
+         width: 30px;
+         height: 30px;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Mobile Styles */
+ @media only screen and (max-width: 400px) {
+     body {
+         background-color: #F09A9D;
+         /* Red */
+     }
+ }
+
+ /* Tablet Styles */
+ @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+     .sign-up,
+     .feature-1,
+     .feature-2,
+     .feature-3 {
+         width: 50%;
+     }
+ }
+
+ /* Desktop Styles */
+ @media only screen and (min-width: 961px) {
+     .page {
+         width: 960px;
+         margin: 0 auto;
+     }
+
+     .feature-1,
+     .feature-2,
+     .feature-3 {
+         width: 33.3%;
+     }
+
+     .header {
+         height: 400px;
+     }
+
+     .sign-up {
+         height: 200px;
+         order: 1;
+     }
+
+     .content {
+         order: 2;
+     }
+ }
