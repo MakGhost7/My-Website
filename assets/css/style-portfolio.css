@@ -42,39 +42,9 @@
      margin: 0 10px;
  }
 
- /* Stile generale per il contenitore principale */
- div {
-     text-align: center;
-     max-width: 800px;
-     margin: 0 auto;
-     padding: 20px;
- }
-
- /* Stile per l'intestazione */
- #h2-portfolio {
-     font-size: 24px;
-     color: #333;
-     margin-bottom: 20px;
- }
-
- /* Stile per il sottotitolo */
- h4 {
-     font-size: 18px;
-     color: #555;
-     margin-top: 20px;
- }
-
-
-
- /* Stile per le linee di testo nel paragrafo */
- #cv-bio br {
-     display: block;
-     margin-bottom: 10px;
- }
-
  /* Stile del contenitore principale */
  #cv {
-     max-width: 800px;
+     max-width: 600px;
      margin: 0 auto;
      background-color: #fff;
      padding: 20px;
@@ -106,57 +76,25 @@
      font-weight: bold;
  }
 
- /* Stile per il periodo di tempo (date) */
- #cv p em {
-     font-style: italic;
-     color: #888;
- }
+
 
  /* Aggiungi uno spazio tra i paragrafi */
  #cv p+p {
      margin-top: 10px;
  }
 
- /* Stile per i link (email e telefono) */
- #cv p a {
-     text-decoration: none;
-     color: #0077b5;
- }
 
- /* Cambia colore su hover per i link */
- #cv p a:hover {
-     color: #005786;
- }
-
- /* Stile per elenco di competenze */
- #cv ul {
-     list-style: none;
-     padding: 0;
- }
-
- #cv ul li {
-     margin: 5px 0;
- }
-
- /* Stile per le citazioni */
- blockquote {
-     font-style: italic;
-     border-left: 2px solid #333;
-     margin: 10px 0;
-     padding-left: 10px;
- }
 
  /* Stile di base per il footer */
  footer {
      background-color: #333;
      color: #fff;
-     padding: 20px;
-     text-align: center;
-     padding-bottom: 0%;
+     padding: 10px 0px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 
  }
-
-
 
  /* Stile per ciascuna icona sociale */
  .social-icons a {
@@ -204,25 +142,6 @@
          height: 30px;
      }
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  /* Mobile Styles */
  @media only screen and (max-width: 400px) {

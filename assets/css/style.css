@@ -7,40 +7,42 @@
 
 /* Set a basic font style */
 body {
-font: italic 1.2rem "Montserrat", serif;
+  font: italic 1.2rem "Montserrat", serif;
 }
 
 /* Style the header */
 header {
-    background-color: #333; /* Background color for the header */
-    color: #fff; /* Text color for the header */
+  background-color: #333;
+  /* Background color for the header */
+  color: #fff;
+  /* Text color for the header */
 }
 
 #navbar-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 #logo-name {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
 }
 
 #navbar-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #navbar-right a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
 }
 
-/* Style the biography section */
+
 /* BIOGRAFY */
 #my-biografy {
   max-width: 500px;
@@ -93,86 +95,123 @@ header {
 
 /* Style the footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-icons a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+
 }
 
 
 
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1%;
-    text-align: center;
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 3;
-    width: 100%;
-    left: 0%;
-   
-    margin-right: -3%;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
+
+/* Stile per ciascuna icona sociale */
 .social-icons a {
-  margin: 0 5%;
-  margin-bottom: 2%;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
 }
 
-.social-icons img {
-  width: 3%;
-  height: 10%;
+.social-icons a:hover {
+  color: #007bff;
+  /* Cambia il colore al passaggio del mouse */
 }
 
+/* Stile per il testo del copyright */
 #MK {
-  margin-bottom: -1%;
-
+  font-size: 14px;
 }
-  
-  /* Mobile Styles */
-  @media only screen and (max-width: 400px) {
-    body {
-      background-color: #F09A9D; /* Red */
-    }
+
+/* Stile per le immagini delle icone sociali */
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Stili responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    margin-bottom: 10px;
   }
-  
-  /* Tablet Styles */
+
+  .social-icons a {
+    margin: 0 5px;
+  }
+
+  #MK {
+    font-size: 12px;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D;
+    /* Red */
+  }
+}
+
+/* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .sign-up,
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-      width: 50%;
-    }
+
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
   }
-  
-  /* Desktop Styles */
+}
+
+/* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    .page {
-      width: 960px;
-      margin: 0 auto;
-    }
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-      width: 33.3%;
-    }
-    .header {
-      height: 400px;
-    }
-    .sign-up {
-        height: 200px;
-        order: 1;
-      }
-      .content {
-        order: 2;
-      }
+  .page {
+    width: 960px;
+    margin: 0 auto;
   }
+
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+
+  .header {
+    height: 400px;
+  }
+
+  .sign-up {
+    height: 200px;
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+  }
+}
